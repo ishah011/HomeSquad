@@ -1,0 +1,70 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="homesquad.homesquad.Home">
+
+    <ImageView
+        android:layout_width="115dp"
+        android:layout_height="115dp"
+        android:id="@+id/bills"
+        android:src = "@drawable/bills"
+        android:layout_marginTop="94dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="31dp"
+        android:layout_marginStart="31dp" />
+
+    <ImageView
+        android:layout_width="115dp"
+        android:layout_height="115dp"
+        android:id="@+id/calendar"
+        android:src="@drawable/calendar"
+        android:layout_alignTop="@+id/bills"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginRight="31dp"
+        android:layout_marginEnd="31dp" />
+
+    <ImageView
+        android:layout_width="115dp"
+        android:layout_height="115dp"
+        android:id="@+id/shopping"
+        android:src="@drawable/shop"
+        android:layout_alignTop="@+id/todo"
+        android:layout_alignLeft="@+id/bills"
+        android:layout_alignStart="@+id/bills" />
+
+    <ImageView
+        android:layout_width="115dp"
+        android:layout_height="115dp"
+        android:id="@+id/todo"
+        android:src="@drawable/todo"
+        android:layout_marginTop="34dp"
+        android:layout_below="@+id/calendar"
+        android:layout_alignLeft="@+id/calendar"
+        android:layout_alignStart="@+id/calendar" />
+
+    <ImageView
+        android:layout_width="115dp"
+        android:layout_height="115dp"
+        android:id="@+id/squad"
+        android:src="@drawable/squad"
+        android:layout_below="@+id/shopping"
+        android:layout_alignLeft="@+id/shopping"
+        android:layout_alignStart="@+id/shopping"
+        android:layout_marginTop="32dp" />
+
+    <ImageView
+        android:layout_width="115dp"
+        android:layout_height="115dp"
+        android:id="@+id/remind"
+        android:src="@drawable/remind"
+        android:layout_alignTop="@+id/squad"
+        android:layout_alignLeft="@+id/todo"
+        android:layout_alignStart="@+id/todo" />
+
+</RelativeLayout>
